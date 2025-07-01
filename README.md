@@ -39,6 +39,7 @@ Navigate to your project directory (where app.py is saved).
 Create the virtual environment:
 
 python -m venv venv
+or python3 -m venv venv
 
 Activate the virtual environment:
 
