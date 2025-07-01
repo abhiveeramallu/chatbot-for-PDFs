@@ -17,7 +17,7 @@ pdf_context = {}  # Store PDF content per user
 
 @app.route("/")
 def home():
-    return send_file("chat.html")
+    return send_file("index.html")  # Changed from chat.html to index.html
 
 @app.route("/ask", methods=["POST"])
 def ask():
