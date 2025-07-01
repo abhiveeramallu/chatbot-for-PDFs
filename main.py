@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, session
+from flask import Flask, request, jsonify, session, send_file
 import google.generativeai as genai
 import pdfplumber
 import os
@@ -17,7 +17,7 @@ pdf_context = {}  # Store PDF content per user
 
 @app.route("/")
 def home():
-    return render_template("chat.html")
+    return send_file("chat.html")
 
 @app.route("/ask", methods=["POST"])
 def ask():
